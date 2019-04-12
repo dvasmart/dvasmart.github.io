@@ -28,7 +28,7 @@
                 <a href="#about">about</a>
               </li>
               <li>
-                <a href="#skills">skills</a>
+                <a href="#portfolio">skills</a>
               </li>
               <li>
                 <a href="#service">service</a>
@@ -164,18 +164,38 @@
       </div>
     </div>
   </div>
-  <!-- skills - title, slider -->
-  <div id="skills" class="skills wrapper">
-    <h2>our amazing work</h2>
-    <div>
-      <a href="#">all</a>
-      <a href="#">graphic design</a>
-      <a href="#">web design</a>
-      <a href="#">landing pages</a>
-      <a href="#">wordpress</a>
+  <!-- portfolio - title, filter, button -->
+  <div id="portfolio" class="portfolio wrapper">
+    <h2 class="portfolio-title" >Our Amazing Work</h2>
+    <div class="portfolio-filter" >
+      <div class="portfolio-tabs" >
+        <button id="button-all" class="portfolio-button" >All</button>
+        <button id="button-graphic-design" class="portfolio-button" >Graphic Design</button>
+        <button id="button-web-design" class="portfolio-button" >Web Design</button>
+        <button id="button-landing-pages" class="portfolio-button" >Landing Pages</button>
+        <button id="button-wordpress" class="portfolio-button" >Wordpress</button>
     </div>
-    <a class="buttonGreen" href="#">
-      <span>+</span> <span>load more</span></a>
+    <div class="portfolio-table">
+      <img src="img/filter-2.jpg" alt="" class="portfolio-image button-graphic-design" >
+      <img src="img/filter-1.jpg" alt="" class="portfolio-image button-all button-landing-pages" >
+      <img src="img/filter-3.jpg" alt="" class="portfolio-image button-web-design" >
+      <img src="img/filter-4.jpg" alt="" class="portfolio-image button-all button-wordpress" >
+      <img src="img/filter-5.jpg" alt="" class="portfolio-image button-graphic-design button-landing-pages" >
+      <img src="img/filter-6.jpg" alt="" class="portfolio-image button-web-design" >
+      <img src="img/filter-7.jpg" alt="" class="portfolio-image button-all button-wordpress" >
+      <img src="img/filter-8.jpg" alt="" class="portfolio-image button-graphic-design" >
+      <img src="img/filter-9.jpg" alt="" class="portfolio-image button-web-design" >
+      <img src="img/filter-10.jpg" alt="" class="portfolio-image button-all button-wordpress" >
+      <img src="img/filter-11.jpg" alt="" class="portfolio-image button-web-design" >
+      <img src="img/filter-12.jpg" alt="" class="portfolio-image button-landing-pages" >
+    </div>
+    </div>
+    <div>
+<a class="buttonGreen" href="#">
+      <span class="buttonGreen-sign" >+</span>
+      <span class="buttonGreen-item" >load more</span>
+    </a>
+    </div>
   </div>
   <hr color="#ebebeb">
   <!-- service - tabs -->
@@ -826,7 +846,8 @@
       copyright 2015 <a href="#"> theHam&#160; </a> all rights reserved
     </div>
   </div>
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/common.js"></script>
 </body>
 

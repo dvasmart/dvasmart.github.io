@@ -1,18 +1,13 @@
+$(function(){
+    $('.portfolio-tabs button').click(function(){
+        var get_id = this.id;
+        var get_current = $('.portfolio-table .' + get_id);
 
-// $(document).ready(function(){
-//   $('.slider-nav').slick({
-//     slidesToShow: 4,
-//     slidesToScroll: 1,
-//     asNavFor: '.slider-for',
-//     dots: false,
-//     centerMode: true,
-//     focusOnSelect: true
-//   });
-//   $('.slider-for').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     fade: true,
-//     asNavFor: '.slider-nav'
-//   });
-// })
+        $('.portfolio-image').not(get_current).hide();
+        get_current.show();
+    });
+
+    $('#button-all').click(function(){
+        $('.portfolio-image').show();
+    });
+});
