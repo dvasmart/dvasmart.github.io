@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>theHam</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -166,35 +167,131 @@
   </div>
   <!-- portfolio - title, filter, button -->
   <div id="portfolio" class="portfolio wrapper">
-    <h2 class="portfolio-title" >Our Amazing Work</h2>
-    <div class="portfolio-filter" >
-      <div class="portfolio-tabs" >
-        <button id="button-all" class="portfolio-button" >All</button>
-        <button id="button-graphic-design" class="portfolio-button" >Graphic Design</button>
-        <button id="button-web-design" class="portfolio-button" >Web Design</button>
-        <button id="button-landing-pages" class="portfolio-button" >Landing Pages</button>
-        <button id="button-wordpress" class="portfolio-button" >Wordpress</button>
-    </div>
-    <div class="portfolio-table">
-      <img src="img/filter-2.jpg" alt="" class="portfolio-image button-graphic-design" >
-      <img src="img/filter-1.jpg" alt="" class="portfolio-image button-all button-landing-pages" >
-      <img src="img/filter-3.jpg" alt="" class="portfolio-image button-web-design" >
-      <img src="img/filter-4.jpg" alt="" class="portfolio-image button-all button-wordpress" >
-      <img src="img/filter-5.jpg" alt="" class="portfolio-image button-graphic-design button-landing-pages" >
-      <img src="img/filter-6.jpg" alt="" class="portfolio-image button-web-design" >
-      <img src="img/filter-7.jpg" alt="" class="portfolio-image button-all button-wordpress" >
-      <img src="img/filter-8.jpg" alt="" class="portfolio-image button-graphic-design" >
-      <img src="img/filter-9.jpg" alt="" class="portfolio-image button-web-design" >
-      <img src="img/filter-10.jpg" alt="" class="portfolio-image button-all button-wordpress" >
-      <img src="img/filter-11.jpg" alt="" class="portfolio-image button-web-design" >
-      <img src="img/filter-12.jpg" alt="" class="portfolio-image button-landing-pages" >
-    </div>
+    <h2 class="portfolio-title">Our Amazing Work</h2>
+    <div class="portfolio-filter">
+      <div class="portfolio-tabs">
+        <button id="filter-all" class="portfolio-button">all</button>
+        <button id="filter-graphic-design" class="portfolio-button">graphic design</button>
+        <button id="filter-web-design" class="portfolio-button">web design</button>
+        <button id="filter-landing-pages" class="portfolio-button">landing pages</button>
+        <button id="filter-wordpress" class="portfolio-button">wordpress</button>
+      </div>
+      <div class="portfolio-table">
+        <div class="portfolio-item filter-graphic-design">
+          <img src="img/filter-1.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+            <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <p class="portfolio-mask-title">creative design</p>
+            <p class="portfolio-mask-item">graphic design</p>
+          </div>
+        </div>
+        <div class="portfolio-item filter-web-design">
+          <img src="img/filter-2.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+            <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <p class="portfolio-mask-title">creative design</p>
+            <p class="portfolio-mask-item">web-design</p>
+          </div>
+        </div>
+        <div class="portfolio-item filter-graphic-design">
+          <img src="img/filter-3.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+            <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <p class="portfolio-mask-title">creative design</p>
+            <p class="portfolio-mask-item">graphic design</p>
+          </div>
+        </div>
+        <div class="portfolio-item filter-web-design">
+          <img src="img/filter-4.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+            <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <p class="portfolio-mask-title">creative design</p>
+            <p class="portfolio-mask-item">web-design</p>
+          </div>
+        </div>
+        <div class="portfolio-item filter-landing-pages">
+          <img src="img/filter-5.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+            <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <p class="portfolio-mask-title">creative design</p>
+            <p class="portfolio-mask-item">landing-pages</p>
+          </div>
+        </div>
+        <div class="portfolio-item filter-web-design">
+          <img src="img/filter-6.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+            <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <p class="portfolio-mask-title">creative design</p>
+            <p class="portfolio-mask-item">web-design</p>
+          </div>
+        </div>
+        <div class="portfolio-item filter-wordpress">
+          <img src="img/filter-7.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+            <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <p class="portfolio-mask-title">creative design</p>
+            <p class="portfolio-mask-item">wordpress</p>
+          </div>
+        </div>
+        <div class="portfolio-item filter-web-design">
+          <img src="img/filter-8.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+            <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <p class="portfolio-mask-title">creative design</p>
+            <p class="portfolio-mask-item">web-design</p>
+          </div>
+        </div>
+        <div class="portfolio-item filter-landing-pages">
+          <img src="img/filter-9.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+            <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <p class="portfolio-mask-title">creative design</p>
+            <p class="portfolio-mask-item">landing-pages</p>
+          </div>
+        </div>
+        <div class="portfolio-item filter-wordpress">
+          <img src="img/filter-10.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+            <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <p class="portfolio-mask-title">creative design</p>
+            <p class="portfolio-mask-item">wordpress</p>
+          </div>
+        </div>
+        <div class="portfolio-item filter-landing-pages">
+          <img src="img/filter-11.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+            <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <p class="portfolio-mask-title">creative design</p>
+            <p class="portfolio-mask-item">landing-pages</p>
+          </div>
+        </div>
+        <div class="portfolio-item filter-wordpress">
+          <img src="img/filter-12.jpg" alt="" class="portfolio-image ">
+          <div class="portfolio-mask">
+              <a href="#" class="portfolio-mask-link"><i class="fas fa-link"></i></a>
+              <a href="#"><i class="fas fa-search"></i></a>
+              <p class="portfolio-mask-title">creative design</p>
+              <p class="portfolio-mask-item">wordpress</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div>
-<a class="buttonGreen" href="#">
-      <span class="buttonGreen-sign" >+</span>
-      <span class="buttonGreen-item" >load more</span>
-    </a>
+      <a class="buttonGreen" href="#">
+        <span class="buttonGreen-sign">+</span>
+        <span class="buttonGreen-item">load more</span>
+      </a>
     </div>
   </div>
   <hr color="#ebebeb">
@@ -318,25 +415,13 @@
     </div>
     <div>
       <article>
-          <a href="#" class="blog-item-link">
-        <div class="blog-item-date">
-          <span>12</span>
-          <span>Feb</span>
-        </div>
-        <img src="img/breaking-news-1.jpeg" width="265" height="230" alt="">
+        <a href="#" class="blog-item-link">
+          <div class="blog-item-date">
+            <span>12</span>
+            <span>Feb</span>
+          </div>
+          <img src="img/breaking-news-1.jpeg" width="265" height="230" alt="">
           <p class="blog-item-text">amazing image post</p>
-        </a> 
-        <a href="#" class="blog-link blog-link-border">By admin</a>
-        <a href="#" class="blog-link">2 comment</a>
-      </article>
-      <article>
-        <a href="#" class="blog-item-link">
-          <div class="blog-item-date">
-          <span>12</span>
-          <span>Feb</span>
-        </div>
-        <img src="img/breaking-news-2.jpg" width="265" height="230" alt="">
-        <p>amazing blog post</p>
         </a>
         <a href="#" class="blog-link blog-link-border">By admin</a>
         <a href="#" class="blog-link">2 comment</a>
@@ -344,11 +429,11 @@
       <article>
         <a href="#" class="blog-item-link">
           <div class="blog-item-date">
-          <span>12</span>
-          <span>Feb</span>
-        </div>
-        <img src="img/breaking-news-3.jpg" width="265" height="230" alt="">
-        <p>amazing blog post</p>
+            <span>12</span>
+            <span>Feb</span>
+          </div>
+          <img src="img/breaking-news-2.jpg" width="265" height="230" alt="">
+          <p>amazing blog post</p>
         </a>
         <a href="#" class="blog-link blog-link-border">By admin</a>
         <a href="#" class="blog-link">2 comment</a>
@@ -356,11 +441,11 @@
       <article>
         <a href="#" class="blog-item-link">
           <div class="blog-item-date">
-          <span>12</span>
-          <span>Feb</span>
-        </div>
-        <img src="img/breaking-news-4.jpg" width="265" height="230" alt="">
-        <p>amazing blog post</p>
+            <span>12</span>
+            <span>Feb</span>
+          </div>
+          <img src="img/breaking-news-3.jpg" width="265" height="230" alt="">
+          <p>amazing blog post</p>
         </a>
         <a href="#" class="blog-link blog-link-border">By admin</a>
         <a href="#" class="blog-link">2 comment</a>
@@ -368,11 +453,11 @@
       <article>
         <a href="#" class="blog-item-link">
           <div class="blog-item-date">
-          <span>12</span>
-          <span>Feb</span>
-        </div>
-        <img src="img/breaking-news-5.jpg" width="265" height="230" alt="">
-        <p>amazing blog post</p>
+            <span>12</span>
+            <span>Feb</span>
+          </div>
+          <img src="img/breaking-news-4.jpg" width="265" height="230" alt="">
+          <p>amazing blog post</p>
         </a>
         <a href="#" class="blog-link blog-link-border">By admin</a>
         <a href="#" class="blog-link">2 comment</a>
@@ -380,11 +465,23 @@
       <article>
         <a href="#" class="blog-item-link">
           <div class="blog-item-date">
-          <span>12</span>
-          <span>Feb</span>
-        </div>
-        <img src="img/breaking-news-6.jpg" width="265" height="230" alt="">
-        <p>amazing blog post</p>
+            <span>12</span>
+            <span>Feb</span>
+          </div>
+          <img src="img/breaking-news-5.jpg" width="265" height="230" alt="">
+          <p>amazing blog post</p>
+        </a>
+        <a href="#" class="blog-link blog-link-border">By admin</a>
+        <a href="#" class="blog-link">2 comment</a>
+      </article>
+      <article>
+        <a href="#" class="blog-item-link">
+          <div class="blog-item-date">
+            <span>12</span>
+            <span>Feb</span>
+          </div>
+          <img src="img/breaking-news-6.jpg" width="265" height="230" alt="">
+          <p>amazing blog post</p>
         </a>
         <a href="#" class="blog-link blog-link-border">By admin</a>
         <a href="#" class="blog-link">2 comment</a>
@@ -392,11 +489,11 @@
       <article>
         <a href="#">
           <div class="blog-item-date">
-          <span>12</span>
-          <span>Feb</span>
-        </div>
-        <img src="img/breaking-news-7.jpg" width="265" height="230" alt="">
-        <p>amazing blog post</p>
+            <span>12</span>
+            <span>Feb</span>
+          </div>
+          <img src="img/breaking-news-7.jpg" width="265" height="230" alt="">
+          <p>amazing blog post</p>
         </a>
         <a href="#" class="blog-link blog-link-border">By admin</a>
         <a href="#" class="blog-link">2 comment</a>
@@ -404,11 +501,11 @@
       <article>
         <a href="#" class="blog-item-link">
           <div class="blog-item-date">
-          <span>12</span>
-          <span>Feb</span>
-        </div>
-        <img src="img/breaking-news-8.jpg" width="265" height="230" alt="">
-        <p>amazing blog post</p>
+            <span>12</span>
+            <span>Feb</span>
+          </div>
+          <img src="img/breaking-news-8.jpg" width="265" height="230" alt="">
+          <p>amazing blog post</p>
         </a>
         <a href="#" class="blog-link blog-link-border">By admin</a>
         <a href="#" class="blog-link">2 comment</a>
@@ -521,8 +618,8 @@
         <div class="slider">
           <!-- first image of slider -->
           <input type="radio" name="slide_switch" id="id1" />
-          <label for="id1" >
-            <img src="img/ux-designer1.png" width="60" height="60" class="slider-img-down"/>
+          <label for="id1">
+            <img src="img/ux-designer1.png" width="60" height="60" class="slider-img-down" />
           </label>
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aliquam nam iure magnam incidunt illum
@@ -535,8 +632,8 @@
           </div>
           <!-- second image of slider -->
           <input type="radio" name="slide_switch" id="id2" />
-          <label for="id2" >
-            <img src="img/ux-designer2.png" width="60" height="60" class="slider-img-down"/>
+          <label for="id2">
+            <img src="img/ux-designer2.png" width="60" height="60" class="slider-img-down" />
           </label>
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo perspiciatis totam beatae aut ullam eius
@@ -548,8 +645,8 @@
           </div>
           <!-- third image of slider -->
           <input type="radio" name="slide_switch" id="id3" checked="checked" />
-          <label for="id3" >
-            <img src="img/ux-designer3.png" width="60" height="60" class="slider-img-down"/>
+          <label for="id3">
+            <img src="img/ux-designer3.png" width="60" height="60" class="slider-img-down" />
           </label>
           <div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laboriosam vel dignissimos, voluptatem
@@ -561,8 +658,8 @@
           </div>
           <!-- fourth image of slider -->
           <input type="radio" name="slide_switch" id="id4" />
-          <label for="id4" >
-            <img src="img/ux-designer4.png" width="60" height="60" class="slider-img-down"/>
+          <label for="id4">
+            <img src="img/ux-designer4.png" width="60" height="60" class="slider-img-down" />
           </label>
           <div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit asperiores totam dolorem vitae expedita
@@ -744,7 +841,8 @@
     <div class="wrapper social ">
       <div class="address">
         <h2 class="address-title">the<span>Ham</span></h2>
-        <p class="address-item" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam blanditiis minima pariatur modi recusandae rerum.</p>
+        <p class="address-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam blanditiis minima
+          pariatur modi recusandae rerum.</p>
         <div>
           <p>
             <span>office :</span>
@@ -764,7 +862,7 @@
         <div>
           <a href="#" class="recent-link-img">
             <img src="img/recent-1.png" alt="">
-          </a> 
+          </a>
           <a href="#" class="recent-link-top">a standart image post</a>
           <p class="recent-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           <a href="#" class="recent-link-bottom">10 march 2015</a>
@@ -772,7 +870,7 @@
         <div>
           <a href="#" class="recent-link-img">
             <img src="img/recent-2.png" alt="">
-          </a> 
+          </a>
           <a href="#" class="recent-link-top">multi author post</a>
           <p class="recent-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           <a href="#" class="recent-link-bottom">10 march 2015</a>
@@ -780,7 +878,7 @@
         <div>
           <a href="#" class="recent-link-img">
             <img src="img/recent-3.png" alt="">
-          </a> 
+          </a>
           <a href="#" class="recent-link-top">multi author post</a>
           <p class="recent-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           <a href="#" class="recent-link-bottom">10 march 2015</a>
@@ -847,7 +945,7 @@
     </div>
   </div>
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/common.js"></script>
 </body>
 

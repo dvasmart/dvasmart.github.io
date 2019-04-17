@@ -3,11 +3,11 @@ $(function(){
         var get_id = this.id;
         var get_current = $('.portfolio-table .' + get_id);
 
-        $('.portfolio-image').not(get_current).hide();
+        $('.portfolio-item').not(get_current).hide();
         get_current.show();
     });
 
-    $('#button-all').click(function(){
-        $('.portfolio-image').show();
+    $('#filter-all').click(function(){
+        $('.portfolio-item').show();
     });
 });

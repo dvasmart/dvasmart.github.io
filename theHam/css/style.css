@@ -66,7 +66,7 @@ a {
 }
 .home-header > a {
     display: inline-block;
-    padding: 24px 0;
+    padding: 14px 0;
     border-bottom: 2px solid transparent;
 }
 .home-header nav {
@@ -80,7 +80,7 @@ a {
 }
 .home-header li a {
     display: inline-block;
-    padding: 52px 9px;
+    padding: 42px 9px;
     color: #b8b8b8;
     font-size: 13px;
     text-transform: uppercase;
@@ -88,13 +88,13 @@ a {
     border-bottom: 2px solid transparent;
 }
 .home-header form {
-    height: 120px;
+    height: 100px;
     color: #a5a5a5;
     font-size: 13px;
     border-bottom: 2px solid transparent;
 }
 .home-header input {
-    height: 120px;
+    height: 100px;
     width: 0;
     padding: 0 42px 0 15px;
     border: none;
@@ -124,7 +124,7 @@ a {
     background: transparent url(../img/search.png) center center no-repeat;
     border: none;
     vertical-align: middle;
-    height: 120px;
+    height: 100px;
     width: 42px;
     outline: none;
     position: relative;
@@ -347,6 +347,7 @@ a {
     cursor: pointer;
     position: relative;
     outline: none;
+    text-transform: capitalize;
 }
 .portfolio-button:last-child {
     border-right: 1px solid #ebebeb;
@@ -366,6 +367,46 @@ a {
     display: grid;
     grid-template-columns: 282px 282px 282px 282px;
     grid-template-rows: 205px 205px 205px;
+}
+.portfolio-mask {
+    display: none;
+    border-top: 3px solid #18cfab;
+}
+.portfolio-item:hover .portfolio-mask {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-item:hover .portfolio-image {
+    display: none;
+}
+.portfolio-mask-title {
+    color: #18cfab;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 30px 0 15px;
+}
+.portfolio-mask-link {
+    display: inline-block;
+    margin-top: 45px;
+}
+.portfolio-mask-item {
+    color: #8a8a8a;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.fas {
+    border: 1px solid #18cfab;
+    border-radius: 50%;
+    padding: 10px;
+    color: #18cfab;
+}
+.fas:hover {
+    background-color: #18cfab;
+    color: #f8fcfe;
 }
 .buttonGreen-sign {
     font-size: 30px;
