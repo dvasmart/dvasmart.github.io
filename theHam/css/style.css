@@ -262,7 +262,11 @@ a {
     background-position: -2px 102%;
     background-size: 60%;
     height: 700px;
+    display: block;
 }
+
+
+
 .about-container {
     display: flex;
     flex-direction: column;
