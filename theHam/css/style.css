@@ -253,46 +253,56 @@ a {
 /* about-main - 3 pictures */
 .about-main-background-image {
     background: url('..//img/phone.jpg') center center no-repeat;
+    background-size: cover;
 }
 .about-main-background-color {
-    background:rgba(9,15,20, 0.7);
+    background-color: rgba(9,15,20, 0.5);
+    background-image: url('..//img/compliation.png');
+    background-repeat: no-repeat;
+    background-position: -2px 101%;
+    background-size: 60%;
+}
+.about-container {
+    display: flex;
+    flex-direction: column;
+    height: 675px;
 }
 .about-main {
-    text-align: center;
-    padding: 100px 15px;
-    height: 670px;
+    align-self: flex-end;
+    width: 35%;
+    margin: 95px 15px 0;
 }
-.about-main h2 {
+.about-main-title {
+    text-align: center;
     text-transform: capitalize;
     font-size: 36px;
     color: #fff;
     display: block;
     position: relative;
-    padding-bottom: 35px;
     margin: 0px;
+    margin-bottom: 25px;
+    font-weight: 400;
 }
-.about-main a {
-    color: #fff;
+.about-tab-label {
+    color: #f5f5f5;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 16px;
     display: inline-block;
     border-top: 2px solid transparent;
-    padding: 11px;
+    padding: 10px 0;
+    cursor: pointer;
+    margin-right: 15px;
 }
-.about-main a:hover {
+.about-tab-label:hover {
     border-top-color: #18cfab;
     color: #18cfab;
 }
-.about-main div {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 13px;
-    padding: 14px;
-    text-align: start;
+.our-skills {
+    margin-right: 0;
 }
 .about-main div:nth-child(2) {
-    margin-bottom: 105px;
+    margin-bottom: 65px;
     padding: 1px;
 }
 .about-main div:nth-child(2) div {
@@ -434,23 +444,22 @@ a {
 .service div:nth-child(2) {
     padding-bottom: 70px;
 }
-.tabs {
+.service-tabs {
 	list-style-type: none;
     position: relative;
     display: flex;
-    flex-direction: row;
     padding: 0px;
     margin-top: 0px;
 }
-.tabs li {
+.service-tabs li {
     width: 195px;
     flex-grow: 1;
     height: 70px;
 }
-.tabs li > input {
+.service-tabs li > input {
 	display: none;
 }
-.tabs li > label {
+.service-tabs li > label {
     width: 100%;
     height: 100%;
 	display: inline-block;
@@ -463,7 +472,7 @@ a {
 	cursor: pointer;
 	user-select: none;
 }
-.tabs label::after {
+.service-tabs label::after {
     content: "";
     display: none;
     width: 0; height: 0;
@@ -473,10 +482,10 @@ a {
     margin-left: 85px;
     margin-top: 25px;
 }
-.tabs li:last-child > label {
+.service-tabs li:last-child > label {
 	border-right-width: 1px;
 }
-.tabs .tab-content {
+.service-tabs .tab-content {
 	display: none;
 	position: absolute;
 	left: 0;
@@ -486,14 +495,6 @@ a {
     text-align: justify;
     animation: fadeIn 1s;
     animation-fill-mode: both;
-}
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
 }
 .tab-content img {
     float: left;
@@ -506,14 +507,14 @@ a {
     padding-right: 20px;
     margin-top: 23px;
 }
-.tabs li > input:checked + label {
+.service-tabs li > input:checked + label {
     background-color: #18cfab;
     color: #fff;
 }
-.tabs li > input:checked + label::after {
+.service-tabs li > input:checked + label::after {
     display: block;
 }
-.tabs li > input:checked ~ .tab-content {
+.service-tabs li > input:checked ~ .tab-content {
     display: block;
     
 }

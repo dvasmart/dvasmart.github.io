@@ -149,19 +149,43 @@
   <!-- about-main - tabs, 3 pictures -->
   <div class="about-main-background-image">
     <div class="about-main-background-color">
-      <div id="about" class="about-main wrapper">
-        <h2>about our company</h2>
+      <div class="about-container wrapper">
+      <div id="about" class="about-main ">
+        <h2 class="about-main-title">about our company</h2>
         <div class="twoStrips">
           <div></div>
         </div>
-        <a href="#">our history</a>
-        <a href="#">our biography</a>
-        <a href="#">our skills</a>
-        <div>user interface</div>
-        <div>web design</div>
-        <div>wordpress</div>
-        <div>html &#38; css</div>
-        <div>app design</div>
+        <!-- <ul>
+          <li>
+            <input type="radio" name="tabs" id="our-history-tab">
+        <label class="about-tab-label" for="our-history-tab">our history</label>
+        <div class="about-tab-container">
+
+        </div>
+      </li>
+          <li>
+            <input type="radio" name="tabs" id="our-biography-tab">
+        <label class="about-tab-label" for="our-biography-tab">our biography</label>
+        <div class="about-tab-container">
+
+        </div>
+      </li>
+          <li>
+            <input type="radio" name="tabs" id="our-skills-tab" checked>
+        <label class="about-tab-label" for="our-skills-tab">our skills</label>
+        <div class="about-tab-container">
+          <ul>
+          <li>user interface</li>
+          <li>web design</li>
+          <li>wordpress</li>
+          <li>html &#38; css</li>
+          <li>app design</li>
+        </ul>
+        </div>
+        
+      </li>
+        </ul> -->
+      </div>
       </div>
     </div>
   </div>
@@ -301,9 +325,9 @@
     <div class="twoStrips">
       <div></div>
     </div>
-    <ul class="tabs">
+    <ul class="service-tabs">
       <li>
-        <input type="radio" name="tabs" id="tab-1" checked>
+        <input type="radio" name="service-tabs" id="tab-1" checked>
         <label for="tab-1">web design</label>
         <div class="tab-content">
           <img src="img/tab-ourservices-1.jpg" alt="">
@@ -321,7 +345,7 @@
         </div>
       </li>
       <li>
-        <input type="radio" name="tabs" id="tab-2">
+        <input type="radio" name="service-tabs" id="tab-2">
         <label for="tab-2">graphic design</label>
         <div class="tab-content">
           <img src="img/tab-ourservices-2.jpg" alt="">
@@ -335,7 +359,7 @@
         </div>
       </li>
       <li>
-        <input type="radio" name="tabs" id="tab-3">
+        <input type="radio" name="service-tabs" id="tab-3">
         <label for="tab-3">online support</label>
         <div class="tab-content">
           <img src="img/tab-ourservices-3.jpg" alt="">
@@ -350,7 +374,7 @@
         </div>
       </li>
       <li>
-        <input type="radio" name="tabs" id="tab-4">
+        <input type="radio" name="service-tabs" id="tab-4">
         <label for="tab-4">app design</label>
         <div class="tab-content">
           <img src="img/tab-ourservices-4.jpg" alt="">
@@ -365,7 +389,7 @@
         </div>
       </li>
       <li>
-        <input type="radio" name="tabs" id="tab-5">
+        <input type="radio" name="service-tabs" id="tab-5">
         <label for="tab-5">online marketing</label>
         <div class="tab-content">
           <img src="img/tab-ourservices-5.jpg" alt="">
@@ -381,7 +405,7 @@
         </div>
       </li>
       <li>
-        <input type="radio" name="tabs" id="tab-6">
+        <input type="radio" name="service-tabs" id="tab-6">
         <label for="tab-6">seo service</label>
         <div class="tab-content">
           <img src="img/tab-ourservices-6.jpg" alt="">
@@ -616,7 +640,6 @@
         <img src="img/quotes.png" alt="" width="44" height="30">
         <!-- slider -->
         <div class="slider">
-          <!-- first image of slider -->
           <input type="radio" name="slide_switch" id="id1" />
           <label for="id1">
             <img src="img/ux-designer1.png" width="60" height="60" class="slider-img-down" />
@@ -630,7 +653,6 @@
             <p>UX Designer</p>
             <img src="img/ux-designer1.png" width="135" height="135" />
           </div>
-          <!-- second image of slider -->
           <input type="radio" name="slide_switch" id="id2" />
           <label for="id2">
             <img src="img/ux-designer2.png" width="60" height="60" class="slider-img-down" />
@@ -643,7 +665,6 @@
             <p>Designer</p>
             <img src="img/ux-designer2.png" width="135" height="135" />
           </div>
-          <!-- third image of slider -->
           <input type="radio" name="slide_switch" id="id3" checked="checked" />
           <label for="id3">
             <img src="img/ux-designer3.png" width="60" height="60" class="slider-img-down" />
@@ -656,7 +677,6 @@
             <p>UX Designer</p>
             <img src="img/ux-designer3.png" width="135" height="135" />
           </div>
-          <!-- fourth image of slider -->
           <input type="radio" name="slide_switch" id="id4" />
           <label for="id4">
             <img src="img/ux-designer4.png" width="60" height="60" class="slider-img-down" />
@@ -808,7 +828,6 @@
           <li><span>fully editable PSD</span></li>
           <a class="buttonGreen" href="#">purchase now</a>
         </ul>
-
       </div>
     </div>
   </div>
@@ -944,8 +963,7 @@
       copyright 2015 <a href="#"> theHam&#160; </a> all rights reserved
     </div>
   </div>
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.3.1.min.js" ></script>
   <script type="text/javascript" src="js/common.js"></script>
 </body>
 
