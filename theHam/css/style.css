@@ -261,6 +261,7 @@ a {
     background-repeat: no-repeat;
     background-position: -2px 102%;
     background-size: 60%;
+    height: 700px;
 }
 .about-container {
     display: flex;
