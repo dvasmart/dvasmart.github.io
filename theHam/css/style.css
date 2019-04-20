@@ -274,6 +274,7 @@ a {
     align-self: flex-end;
     width: 35%;
     margin: 95px 15px 0;
+    height: 700px;
 }
 .about-main-title {
     text-align: center;
