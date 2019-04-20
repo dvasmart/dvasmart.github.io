@@ -259,13 +259,13 @@ a {
     background-color: rgba(9,15,20, 0.5);
     background-image: url('..//img/compliation.png');
     background-repeat: no-repeat;
-    background-position: -2px 101%;
+    background-position: -2px 102%;
     background-size: 60%;
 }
 .about-container {
     display: flex;
     flex-direction: column;
-    height: 675px:
+    height: 675px;
 }
 
 
