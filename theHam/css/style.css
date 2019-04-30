@@ -115,15 +115,16 @@ li {
     z-index: 1;
     border-bottom: 2px solid #F9F0DA;
     background: #fff;
-    height: 55px;
-    top: 33px;
+    height: 40px;
+    top: 30px;
     right: 42px;
     color: #a5a5a5;
     font-size: 13px;
     cursor: text;
 }
-.home-header button {
-    background: transparent url(../img/search.png) center center no-repeat;
+.home-header__button {
+    /* background: transparent url(../img/search.png) center center no-repeat; */
+    background: transparent;
     border: none;
     vertical-align: middle;
     height: 100px;
@@ -134,15 +135,19 @@ li {
     right: 0;
     cursor: pointer;
 }
-.home-header button:before {
+.home-header__button:before {
     content: "";
     color: #a5a5a5;
     font-size: 13px;
 }
-.home-header button:active {
+.home-header__button:active {
     border-bottom-color: #18cfab;
     color: #18cfab;
 } 
+.home-header__search {
+    color: #b7b7b7;
+    font-size: 23px;
+}
 .home-header > a:hover,
 .home-header li a:hover,
 .home-header form:hover {
@@ -317,6 +322,8 @@ li {
 }
 .about-items {
     padding-left: 0;
+    column-count: 2;
+    margin-top: 35px;
 }
 .about-items__check-circle {
     color: #18cfab;
@@ -478,8 +485,9 @@ li {
     color: #f8fcfe;
 }
 .buttonGreen-sign {
-    font-size: 30px;
+    font-size: 16px;
     padding-right: 10px;
+    vertical-align: super;
 }
 .buttonGreen-item {
     vertical-align: 45%;
@@ -929,40 +937,72 @@ li {
     background-color: #18cfab;
 	border-color: #18cfab;
 }
-/* team */
+/* team - 4 blocks */
 .team {
     text-align: center;
-    height: 579px;
 }
-.team h2 {
-    text-align: center;
+.team__title {
     text-transform: capitalize;
     color: #4e4e4e;
     font-size: 36px;
     font-weight: 400;
     margin: 100px 0 35px;
-    position: relative;
 }
-.team > div:nth-child(2) div {
-    width: 75px;
-    border-bottom: 1px solid #18cfab;
-    border-top: 1px solid #18cfab;
-}
-.team > div:nth-child(3) {
-    margin-top: 70px;
-    /* cursor: pointer; */
-}
-.team div {
+.team__container {
+    margin: 70px auto 100px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
-.team div > div {
+.team__worker {
     width: 265px;
 }
-.team p {
-    background: #2e4a5b;
+.team__worker-1 {
+    background: #8C9AA3 url('..//img/worker-1.png') center center no-repeat;
+    height: 230px;
+}
+.team__worker-2 {
+    background: #8C9AA3 url('..//img/worker-2.png') center center no-repeat;
+    height: 230px;
+}
+.team__worker-3 {
+    background: #8C9AA3 url('..//img/worker-3.png') center center no-repeat;
+    height: 230px;
+}
+.team__worker-4 {
+    background: #8C9AA3 url('..//img/worker-4.png') center center no-repeat;
+    height: 230px;
+}
+.team__hover {
+    display: none;
     width: 100%;
+    height: 100%;
+}
+.team__plus {
+    font-size: 90px;
+    color: #18cfab;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    background: #f3f5f5;
+    margin: 4px;
+    line-height: 1;
+}
+.team__link_plus {
+    border: 2px solid #18cfab;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 25%;
+}
+.team__worker:hover .team__hover {
+    display: block;
+    background: rgba(140,154,162,.5);
+}
+.team__worker:hover .team__link,
+.team__worker:hover .team__item {
+    background: #18cfab;
+}
+.team__item {
+    background: #2e4a5b;
     margin: 0;
     padding: 20px 25px;
     text-align: left;
@@ -970,113 +1010,32 @@ li {
     font-weight: 700;
     font-size: 16px;
 }
-.team a {
+.team__item_position {
+    font-weight: 300;
+    color: #18cfab;
+    font-size: 13px;
+    padding: 0 25px 20px;
+}
+.team__worker:hover .team__item_position {
+    color: #2e4a5b;
+}
+.team_social {
+    display: flex;
+    justify-content: space-around;
+}
+.team__link {
     background: #2e4a5b;
     border: 1px solid #fff;
     border-right: none;
     flex-grow: 1;
-    padding: 25px 0 20px;
+    padding: 20px 0;
 }
-.team a:first-child {
-    border: none;
-}
-.team a:nth-child(3) {
+.team__link_first {
     border-left: none;
 }
-
-.team span {
-    display: inline-block;
-    padding-top: 9px;
-    font-weight: 300;
-    color: #18cfab;
-    font-size: 13px;
-}
-.team div > div {
-    position: relative;
-}
-.worker-1 {
-    background: #8C9AA3 url('..//img/worker1.png') center center no-repeat;
-}
-.worker-2 {
-    background: #DBEAE7 url('..//img/worker2.png') center center no-repeat;
-}
-.worker-3 {
-    background: #EBEBEB url('..//img/worker3.png') center center no-repeat;
-}
-.worker-4 {
-    background: #E4FDF9 url('..//img/worker4.png') center center no-repeat;
-}
-.worker-1,
-.worker-2,
-.worker-3,
-.worker-4 {
-    width:265px;
-    height:230px;
-}
-.team div > div:hover a,
-.team div > div:hover p {
-    background: #18cfab;
-}
-.team div > div:hover span {
-    color: #2e4a5b;
-}
-.hover {
-    display: none;
-    width:265px;
-    height:230px;
-    background: #8c9aa3;
-    position: relative;
-}
-.team div > div:hover .hover {
-    display: block;
-    background: #8c9aa3;
-    opacity: 0.5;
-}
-.cross-1,
-.cross-2,
-.round-1,
-.round-2 {
-    position: absolute;
-}
-.round-2 {
-    display: none;
-    border: 2px solid #18cfab;
-    border-radius: 50%;
-    width: 84px;
-    height: 84px;
-    top: 75px;
-    left: 88px;
-}
-.round-1 {
-    display: none;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    background: #fff;
-    top: 82px;
-    left: 95px;
-}
-.cross-2 {
-    display: none;
-    height: 4px;
-    width: 30px;
-    background: #18cfab;
-    left: 117px;
-    top: 115px;
-}
-.cross-1 {
-    display: none;
-    background: #18cfab;
-    height: 30px;
-    width: 4px;
-    left: 130px;
-    top: 102px;
-}
-.team div > div:hover .round-2,
-.team div > div:hover .round-1,
-.team div > div:hover .cross-2,
-.team div > div:hover .cross-1 {
-    display: block;
+.team__icon {
+    font-size: 18px;
+    color: #fff;
 }
 /* product - title, list, button, img */
 .product-background-image {
@@ -1115,7 +1074,6 @@ li {
     font-weight: 300;
     color: #f7f7f7;
     text-transform: capitalize;
-    /* list-style-image: url("..//img/check.png"); */
     list-style-position: inside;
     float: right;
     margin-right: 110px;
@@ -1141,6 +1099,7 @@ li {
 }
 .map {
     margin-top: 125px;
+    width: 55%;
 }
 .contact {
     display: inline-block;
