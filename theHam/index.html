@@ -8,92 +8,234 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="home">
-    <div class="home-header-main-background-image">
-      <!-- home-header - logotype, navigation menu, search -->
-      <div class="home-header-background">
-        <div class="home-header wrapper">
-          <a href="#">
-            <img src="img/logo.png" alt="logotype">
-          </a>
-          <nav>
-            <ul>
-              <li>
-                <a href="#home">home</a>
-              </li>
-              <li>
-                <a href="#about">about</a>
-              </li>
-              <li>
-                <a href="#portfolio">skills</a>
-              </li>
-              <li>
-                <a href="#service">service</a>
-              </li>
-              <li>
-                <a href="#work">work</a>
-              </li>
-              <li>
-                <a href="#testimonial">testimonial</a>
-              </li>
-              <li>
-                <a href="#blog">blog</a>
-              </li>
-              <li>
-                <a href="#team">team</a>
-              </li>
-              <li>
-                <a href="#contact">contact</a>
-              </li>
-            </ul>
-            <form>
-              <input type="text" placeholder="Type and search&hellip;">
-              <button class="home-header__button" type="submit">
-                <i class="fas fa-search home-header__search"></i>
-              </button>
-            </form>
-          </nav>
+  <!-- navigation - logotype, menu, search -->
+  <div class="navigation__background">
+    <div class="navigation__container  home-header wrapper">
+      <a href="#" class="navigation__logo">
+        <img src="img/logo.png" alt="logotype">
+      </a>
+      <nav class="navigation__box">
+        <ul class="navigation__menu">
+          <li>
+            <a href="#home" class="navigation__link">home</a>
+          </li>
+          <li>
+            <a href="#about" class="navigation__link">about</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="navigation__link">skills</a>
+          </li>
+          <li>
+            <a href="#service" class="navigation__link">service</a>
+          </li>
+          <li>
+            <a href="#work" class="navigation__link">work</a>
+          </li>
+          <li>
+            <a href="#testimonial" class="navigation__link">testimonial</a>
+          </li>
+          <li>
+            <a href="#blog" class="navigation__link">blog</a>
+          </li>
+          <li>
+            <a href="#team" class="navigation__link">team</a>
+          </li>
+          <li>
+            <a href="#contact" class="navigation__link">contact</a>
+          </li>
+        </ul>
+        <form class="navigation__form">
+          <input type="text" placeholder="Type and search&hellip;" class="navigation__input">
+          <button class="navigation__button" type="submit">
+            <i class="fas fa-search navigation__icon"></i>
+          </button>
+        </form>
+      </nav>
+    </div>
+  </div>
+  <!-- home-main - search hover, topic, buttons explore now & purchase now, slider -->
+  <div class="home-main">
+     <div class="slider-for">
+<div>
+  <div class="home-main__image-1">
+    <div class="home-main__overlay">
+      <div id="home" class="home-main__box wrapper">
+        <div>the ham is
+          <span class="home-main__tagline">wordpress theme</span>
         </div>
-      </div>
-      <!-- home-main - search hover, topic, buttons explore now & purchase now, slider -->
-      <div class="home-main-background">
-
-        <div id="home" class="home-main wrapper">
-
-          <div>the ham is
-            <span>wordpress theme</span>
-          </div>
-          <div>we are creative</div>
-          <div>just buy and enjoy these awesome features</div>
-          <div>
-            <a class="buttonGreen" href="#">explore now</a>
-            <a class="buttonGreen" href="#">purchase now</a>
-          </div>
+        <div class="home-main__title">we are creative</div>
+        <div class="home-main__subtitle">just buy and enjoy these awesome features</div>
+        <div class="home-main__button">
+          <a class="buttonGreen" href="#">explore now</a>
+          <a class="buttonGreen buttonGreen__second" href="#">purchase now</a>
         </div>
       </div>
     </div>
-    <!-- home - 4 pictures -->
-    <div class="home-bottom">
-      <div>
-        <img src="img/forma-1.png" alt="">
-        <span>different theme option</span>
+  </div>
+</div>
+
+<div>
+  <div class="home-main__image-2">
+    <div class="home-main__overlay">
+      <div id="home" class="home-main__box wrapper">
+        <div>the ham is
+          <span class="home-main__tagline">wordpress theme</span>
+        </div>
+        <div class="home-main__title">we are amazing</div>
+        <div class="home-main__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit</div>
+        <div class="home-main__button">
+          <a class="buttonGreen" href="#">explore now</a>
+          <a class="buttonGreen buttonGreen__second" href="#">purchase now</a>
+        </div>
       </div>
-      <div>
-        <img src="img/forma-2.png" alt="">
-        <span>fully customizable</span>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="home-main__image-3">
+    <div class="home-main__overlay">
+      <div id="home" class="home-main__box wrapper">
+        <div>the ham is
+          <span class="home-main__tagline">wordpress theme</span>
+        </div>
+        <div class="home-main__title">we are fast</div>
+        <div class="home-main__subtitle">Ullam eveniet rem totam maiores aperiam?</div>
+        <div class="home-main__button">
+          <a class="buttonGreen" href="#">explore now</a>
+          <a class="buttonGreen buttonGreen__second" href="#">purchase now</a>
+        </div>
       </div>
-      <div>
-        <img src="img/forma-3.png" alt="">
-        <span>unlimited support</span>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="home-main__image-4">
+    <div class="home-main__overlay">
+      <div id="home" class="home-main__box wrapper">
+        <div>the ham is
+          <span class="home-main__tagline">wordpress theme</span>
+        </div>
+        <div class="home-main__title">we are interesting</div>
+        <div class="home-main__subtitle">Maiores quam veritatis fugiat facilis quae.</div>
+        <div class="home-main__button">
+          <a class="buttonGreen" href="#">explore now</a>
+          <a class="buttonGreen buttonGreen__second" href="#">purchase now</a>
+        </div>
       </div>
-      <div>
-        <img src="img/forma-4.png" alt="">
-        <span>responsive all device</span>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="home-main__image-5">
+    <div class="home-main__overlay">
+      <div id="home" class="home-main__box wrapper">
+        <div>the ham is
+          <span class="home-main__tagline">wordpress theme</span>
+        </div>
+        <div class="home-main__title">we are awesome</div>
+        <div class="home-main__subtitle">Sint officiis possimus consequuntur delectus debitis</div>
+        <div class="home-main__button">
+          <a class="buttonGreen" href="#">explore now</a>
+          <a class="buttonGreen buttonGreen__second" href="#">purchase now</a>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="home-main__image-6">
+    <div class="home-main__overlay">
+      <div id="home" class="home-main__box wrapper">
+        <div>the ham is
+          <span class="home-main__tagline">wordpress theme</span>
+        </div>
+        <div class="home-main__title">we are smart</div>
+        <div class="home-main__subtitle">Delectus at ullam veritatis distinctio ea</div>
+        <div class="home-main__button">
+          <a class="buttonGreen" href="#">explore now</a>
+          <a class="buttonGreen buttonGreen__second" href="#">purchase now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="home-main__image-7">
+    <div class="home-main__overlay">
+      <div id="home" class="home-main__box wrapper">
+        <div>the ham is
+          <span class="home-main__tagline">wordpress theme</span>
+        </div>
+        <div class="home-main__title">we are professional</div>
+        <div class="home-main__subtitle">Laborum quibusdam atque perferendis voluptatum illum</div>
+        <div class="home-main__button">
+          <a class="buttonGreen" href="#">explore now</a>
+          <a class="buttonGreen buttonGreen__second" href="#">purchase now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
+  <div class="slider-nav">
+      
+<img src="img/worktable-1.jpg" alt="" class="slider-nav__img">
+<img src="img/worktable-2.jpg" alt="" class="slider-nav__img">
+<img src="img/worktable-3.jpg" alt="" class="slider-nav__img">
+<img src="img/worktable-4.jpg" alt="" class="slider-nav__img">
+<img src="img/worktable-5.jpg" alt="" class="slider-nav__img">
+<img src="img/worktable-6.jpg" alt="" class="slider-nav__img">
+<img src="img/worktable-7.jpg" alt="" class="slider-nav__img">
+  </div>
+ 
+
+  <!-- <div class="home-main__image">
+    <div class="home-main__overlay">
+      <div id="home" class="home-main__box wrapper">
+        <div>the ham is
+          <span class="home-main__tagline">wordpress theme</span>
+        </div>
+        <div class="home-main__title">we are creative</div>
+        <div class="home-main__subtitle">just buy and enjoy these awesome features</div>
+        <div class="home-main__button">
+          <a class="buttonGreen" href="#">explore now</a>
+          <a class="buttonGreen buttonGreen__second" href="#">purchase now</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  </div>
+ 
+  <!-- home - 4 pictures -->
+  <div class="home-bottom">
+    <div>
+      <img src="img/forma-1.png" alt="">
+      <span>different theme option</span>
+    </div>
+    <div>
+      <img src="img/forma-2.png" alt="">
+      <span>fully customizable</span>
+    </div>
+    <div>
+      <img src="img/forma-3.png" alt="">
+      <span>unlimited support</span>
+    </div>
+    <div>
+      <img src="img/forma-4.png" alt="">
+      <span>responsive all device</span>
     </div>
   </div>
   <!-- about - text blogs -->
@@ -1014,6 +1156,7 @@
     </div>
   </div>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
 </body>
 

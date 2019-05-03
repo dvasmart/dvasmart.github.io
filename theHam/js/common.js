@@ -1,4 +1,4 @@
-// about-main
+// about-main - tabs
 (function($) {
     $(function() {
      
@@ -11,7 +11,7 @@
     });
     })(jQuery);
 
-// portfolio
+// portfolio - filter
 $(function(){
     $('.portfolio-tabs button').click(function(){
         var get_id = this.id;
@@ -26,3 +26,23 @@ $(function(){
     });
 });
 
+// home-main - slider
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: false,
+    asNavFor: '.slider-nav',
+    
+});
+$('.slider-nav').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    arrows: true,
+//     autoplay: true,
+//   autoplaySpeed: 3000,
+});
