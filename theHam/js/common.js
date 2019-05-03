@@ -11,6 +11,16 @@
     });
     })(jQuery);
 
+// navigation - small
+$(document).on("scroll",function(){
+    if($(document).scrollTop()>50){ 
+        $("a.navigation__logo").removeClass("navigation__large").addClass("navigation__small");
+        }
+    else{
+        $("a.navigation__logo").removeClass("navigation__small").addClass("navigation__large");
+        }
+});
+
 // portfolio - filter
 $(function(){
     $('.portfolio-tabs button').click(function(){
@@ -33,7 +43,6 @@ $('.slider-for').slick({
     arrows: false,
     fade: false,
     asNavFor: '.slider-nav',
-    
 });
 $('.slider-nav').slick({
     slidesToShow: 1,

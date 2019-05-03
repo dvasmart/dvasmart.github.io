@@ -62,34 +62,33 @@ li {
     justify-content: space-between;
 }
 .navigation__logo {
-    padding: 14px 0;
     border-bottom: 2px solid transparent;
 }
 .navigation__box {
     display: flex;
-    position: relative;
 }
 .navigation__menu {
     display: flex;
     margin: 0;
 }
 .navigation__link {
-    display: inline-block;
-    padding: 42px 9px;
+    display: flex;
+    padding: 1% 9px;
     color: #b8b8b8;
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 700;
     border-bottom: 2px solid transparent;
+    align-items: center;
 }
 .navigation__form {
-    height: 100px;
     border-bottom: 2px solid transparent;
+    position: relative;
 }
 .navigation__input {
-    height: 100px;
+    height: 100%;
     width: 0;
-    padding: 0 42px 0 15px;
+    padding: 0 43px 0 14px;
     border: none;
     border-bottom: 2px solid transparent;
     outline: none;
@@ -116,7 +115,7 @@ li {
 .navigation__button {
     background: transparent;
     border: none;
-    height: 100px;
+    height: 100%;
     width: 42px;
     outline: none;
     cursor: pointer;
@@ -139,6 +138,12 @@ li {
 .navigation__form:hover {
     border-bottom-color: #18cfab;
     color: #18cfab;
+}
+.navigation__large {
+    padding: 2%;
+}
+.navigation__small {
+    padding: 0;
 }
 /* home-main - search hover, topic, buttons explore now & purchase now, slider */
 .home-main {
@@ -856,6 +861,7 @@ li {
 .comment > img {
     display: inline-block;
     margin: 70px auto 25px;
+    transition: none;
 }
 .slider{
     width: 915px;
@@ -900,6 +906,7 @@ li {
 	position: relative;
     margin-top: 35px;
     background: #fff;
+    transition: all 3s;
 }
 .slider input[name='slide_switch']:checked+label {
 	box-shadow: 0 0 0 2px #18cfab, 0 0 0 7px #2b5f62;
@@ -913,21 +920,21 @@ li {
 	opacity: 0;
 }
 .slider input[name='slide_switch']:checked+label+div {
-	opacity: 1;
+    opacity: 1;
 }
 .slider input[name='slide_switch']:checked+label+div img {
 	box-shadow: 0 0 0 3px #18cfab, 0 0 0 14px #2b5f62;
 	border-radius: 50%;
-	position: relative;
+    position: relative;
 }
 #controls {
 	position: relative;
 	opacity: 1;
-	font-size: 0;
+    font-size: 0;
 }
 #controls label {
 	box-shadow: none;
-	margin: 0;
+    margin: 0;
 }
 #id1:checked ~ #controls label:nth-child(4), 
 #id2:checked ~ #controls label:nth-child(1),
@@ -940,7 +947,7 @@ li {
 	border: 2px solid #91969a;
 	border-radius: 0;
 	padding: 13px;
-	margin-left: 220px;
+    margin-left: 220px;
 }
 #id1:checked ~ #controls label:nth-child(2), 
 #id2:checked ~ #controls label:nth-child(3),
