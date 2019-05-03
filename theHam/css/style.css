@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    transition: all 1s;
 }
 body {
     min-width: 320px;
@@ -140,7 +141,7 @@ li {
     color: #18cfab;
 }
 .navigation__large {
-    padding: 2%;
+    padding: 2% 0;
 }
 .navigation__small {
     padding: 0;
