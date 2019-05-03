@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    transition: all 1s;
 }
 body {
     min-width: 320px;
@@ -680,6 +679,9 @@ li {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.blog-item-link {
+    display: inline-block;
+}
 .blog div:nth-child(2) {
     justify-content: center;
     margin-bottom: 40px;
@@ -907,7 +909,6 @@ li {
 	position: relative;
     margin-top: 35px;
     background: #fff;
-    transition: all 3s;
 }
 .slider input[name='slide_switch']:checked+label {
 	box-shadow: 0 0 0 2px #18cfab, 0 0 0 7px #2b5f62;
