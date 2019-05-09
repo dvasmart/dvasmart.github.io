@@ -1299,7 +1299,7 @@ li {
     flex-direction: column;
     align-items: flex-start;
 }
-.tags-title-first {
+.tags__title-top {
     margin: 0 0 40px;
 }
 .tags div {
@@ -1312,7 +1312,7 @@ li {
     padding-bottom: 30px;
     border-bottom: 2px solid #294453;
 }
-.tags a {
+.tags__link_usuall {
     display: inline-block;
     padding: 11px 13px;
     border: 1px solid #acacac;
@@ -1321,18 +1321,31 @@ li {
     text-transform: none;
     margin: 7px;
 }
-.tags a:hover {
+.tags__link_active {
+    display: inline-block;
+    padding: 11px 13px;
+    border: 1px solid #acacac;
+    line-height: 1.15;
+    text-transform: none;
+    margin: 7px;
+    color: #fff;
+    background: #18cfab;
+    border: 1px solid #acacac;
+}
+.tags__link:hover {
     color: #fff;
     background: #18cfab;
     border-color: #18cfab;
 }
-.tags div:first-child a {
+
+
+.tags__box {
     margin-left: 0;
 }
-.tags-title-second {
+.tags__title-bottom {
     margin: 35px 0 30px;
 }
-.tags-content {
+.tags__item {
     line-height: 26px;
 }
 .tags-form {

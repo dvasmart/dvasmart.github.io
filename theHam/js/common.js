@@ -62,8 +62,8 @@ $('.slider-nav').slick({
     centerMode: false,
     focusOnSelect: true,
     arrows: true,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
 });
 
 // testimonial - 4 statistic buttons
@@ -86,3 +86,32 @@ $(document).ready(function(){
     }
     });
 });
+
+// scroll - slow
+// $(document).bind( 'mousewheel', function (e) { 
+//     var nt = $(document.body).scrollTop()-(e.deltaY*e.deltaFactor*100); 
+//     e.preventDefault(); 
+//     e.stopPropagation(); 
+//     $(document.body).stop().animate( { 
+//          scrollTop : nt 
+//      } , 1000 , 'easeInOutCubic' );  
+// } );
+
+// active button on tags block
+//   $("tags__link").hover(function() {
+//     $(this).removeClass("tags__link_usuall").addClass("tags__link_active");
+//     $("tags__link_first").removeClass("tags__link_active").addClass("tags__link_usuall");
+//   });
+
+//   $("tags__link").mouseleave(function() {
+//     $(this).addClass("tags__link_usuall").removeClass("tags__link_active");
+//     $("tags__link_first").removeClass("tags__link_usuall").addClass("tags__link_active");
+//   });
+
+//   $(".tags__link").hover(function() {
+    
+//   });
+
+//   $(".tags__link").mouseleave(function() {
+    
+//   });
